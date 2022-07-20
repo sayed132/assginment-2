@@ -3,7 +3,7 @@
 body{
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #ddd;
+    background-color: rgb(255, 251, 251);
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
@@ -14,6 +14,9 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 img{
     width: 100%;
+}
+.container{
+    padding: 10px 0;
 }
 
 /* header styles */
@@ -58,4 +61,135 @@ img{
 .header-item-img{
     width: 80%;
     padding-top: 7%;
+}
+
+/* blog section styles */
+.blog-section{
+    display: grid;
+    grid-template-columns: 250px repeat(1,1fr);
+    
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 40px 20px;
+    border-radius: 6px;
+}
+.date-line{
+    background-color: black;
+    color: white;
+    margin: 10px 20px;
+    padding: 15px 10px ;
+    
+    border-radius: 12px;
+    text-align: center;    
+    height: 200px;
+    align-items: center;
+}
+.date-line li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+.date-line li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.match-blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    /* padding: 20px; */
+    margin: 10px;
+    background-color: white;
+    box-shadow: 6px 6px 16px gray;
+    border-radius: 12px;
+}
+.card img{
+    width: 100%;
+}
+.card-info{
+    padding: 20px;
+}
+.card-info .btn{
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+.card-info p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.match-blog .btn{
+    display: none;
+}
+
+
+/* foter styles */
+footer{
+    background-color: rgba(0, 0, 0, 0.837);
+    color: white;
+    height: 200px;
+    margin-top: -30px;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-container{
+    padding: 10px 20px;
+}
+footer h1{
+    text-align: center;
+    font-size: 2em;
+    
+}
+footer ul{
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.351);
+    font-size: 0.8em;
+}
+footer hr{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: silver;
+}
+
+
+
+/* index2 website styles */
+.card-img-2{
+    display: flex;
+    padding: 30px 15px 0px 15px;
+    align-items: center;
+    
+}
+.card-img-2 span{
+    padding: 0 10px;
+}
+.card-info-2{
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.card-info-2 p{
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 0.2em;
+    font-weight: lighter;
+    opacity: 0.5;
 }
