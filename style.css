@@ -66,6 +66,12 @@ header styles
     color: white;
     border: none;
     border-radius: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: purple;
 }
 .header-item-img{
     width: 80%;
@@ -97,6 +103,7 @@ blog section styles
     text-align: center;    
     height: 200px;
     align-items: center;
+    
 }
 .date-line li{
     list-style: none;
@@ -105,22 +112,35 @@ blog section styles
     background-color: white;
     margin-top: 20px;
     border-radius: 12px;
+    transition: all 0.5s;
 }
 .date-line li a{
     text-decoration: none;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    
 }
+.date-line li:hover{
+    transform: scale(1.1);
+    background-color: red;
+    
+}
+
+
 .match-blog{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 .card{
-    
-    margin: 10px;
+    cursor: pointer;
+    margin: 20px 10px;
     background-color: white;
     box-shadow: 6px 6px 16px gray;
     border-radius: 12px;
+    transition: all 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .card img{
     width: 100%;
@@ -134,6 +154,11 @@ blog section styles
     border: 1px solid gray;
     font-size: 1.3em;
     font-weight: lighter;
+    transition: all 0.5s;
+}
+.card-info .btn:hover{
+    background-color: greenyellow;
+    
 }
 .card-info p{
     font-family: 'Montserrat', sans-serif;
@@ -175,6 +200,12 @@ footer ul li{
     margin: 10px;
     padding: 10px;
     list-style: none;
+    transition: all 0.5s;
+}
+footer ul li:hover{
+    background-color: rgba(0, 0, 0, 0.21);
+    border-radius: 12px;
+    transform: scale(1.1);
 }
 footer ul li a{
     text-decoration: none;
@@ -199,7 +230,9 @@ footer hr{
     margin: 0px 30px;
     padding: 10px 20px;
 }
-
+.footer-style{
+    color: yellow;
+}
 
 
 /*----------------------
@@ -383,4 +416,19 @@ Media Query styles here
     
  }
 
- 
+ @media screen and (min-width: 993px) and (max-width: 1200px){
+    .header{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .header-item-text h1{
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    .header-item-text p{
+        font-size: 0.9em;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+    }
+ }
