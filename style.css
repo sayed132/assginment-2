@@ -1,0 +1,61 @@
+/* common styles */
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ddd;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+/* font css */
+/* font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+img{
+    width: 100%;
+}
+
+/* header styles */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+    border-radius: 30px;
+    margin-top: 70px;
+}
+.header-items{
+    
+    width: 50%;
+}
+.header-item-text{
+    padding-right: 50px;
+    padding-left: 100px;
+    
+}
+.header-item-text h1{
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+.header-item-text p{
+    line-height: 2em;
+    color: silver;
+    font-weight: lighter;
+}
+.btn{
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.header-item-img{
+    width: 80%;
+    padding-top: 7%;
+}
