@@ -239,7 +239,7 @@ Media Query styles here
 /*~~~~~~~~~~~~~~~~~~
  for mobile device 
  ~~~~~~~~~~~~~~~~~~~~*/
- @media screen and (min-width: 200px ) and (max-width: 576px) {
+ @media screen and (min-width: 200px ) and (max-width: 668px) {
     
     .header{
         width: 90%;
@@ -309,7 +309,7 @@ Media Query styles here
         cursor: pointer;
     }
     footer{
-        height: 100%;
+        height: 90%;
     }
     footer ul li{
         display: block;
@@ -321,5 +321,66 @@ Media Query styles here
     }
  }
 
+
+ /* for tablate */
+
+ @media screen and (min-width: 669px) and (max-width: 992px) {
+    .header{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+    .header-items{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .header-item-text h1{
+        font-size: 1.8em;
+    }
+    .header-item-text p{
+        font-size: 0.7em;
+    }
+
+    .blog-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .date-line{
+        display: flex;
+        
+        height: 120px;
+        align-items: center;
+        background-color: transparent;
+        
+        margin: 0;
+        padding: 0;
+    }
+    .date-line li{
+        background-color: white;
+        box-shadow: 2px 2px 8px gray;
+        width: 50%;
+        padding: 20px;
+    }
+    .match-blog{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .card-vis{
+        display: none;
+    }
+
+    .match-blog .btn-2{
+        visibility: visible;
+        margin-left: 85%;
+        height: 50px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20%;
+    }
+    
+    
+ }
 
  
